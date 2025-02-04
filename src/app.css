@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+:root {
+	--text-color-black: #000;
+}
+
+@media print {
+	* {
+		-webkit-print-color-adjust: exact !important; /*Chrome, Safari */
+		color-adjust: exact !important; /*Firefox*/
+	}
+}
