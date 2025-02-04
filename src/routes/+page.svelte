@@ -1,8 +1,8 @@
 <script>
-	import NavMenu from './NavMenu.svelte';
+  import NavMenu from './NavMenu.svelte';
 </script>
 
 <div>
-	Default page
-	<NavMenu />
+  Default page
+  <NavMenu />
 </div>

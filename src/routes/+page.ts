@@ -4,4 +4,4 @@ export async function load() {
   return {
     theme: 'techno'
   }
- }
+}
