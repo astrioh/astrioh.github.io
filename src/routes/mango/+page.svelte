@@ -1,0 +1,1 @@
+<div>Mango page</div>

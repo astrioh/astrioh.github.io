@@ -6,7 +6,10 @@
 }
 
 :root {
-  --text-color-black: #000;
+  --color-black: #000;
+  --color-dark-blue: #010058;
+  --text-color-black: var(--color-black);
+  --text-color-blue: var(--color-dark-blue);
 }
 
 @media print {
@@ -15,4 +18,8 @@
     print-color-adjust: exact !important;
     color-adjust: exact !important; /*Firefox*/
   }
+}
+
+body {
+  margin: 0;
 }
