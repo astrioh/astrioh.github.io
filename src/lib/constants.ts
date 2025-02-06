@@ -6,10 +6,10 @@ type MenuLink = {
 
 export const PAGE_PATHS = {
   MAIN: '/',
-  PROJECTS: '/projects',
-  PROJECTS_PROGRAMS: '/projects/programs/',
+  PROJECTS: '/',
+  PROJECTS_PROGRAMS: '/',
   MANGA: '/mango',
-  VIDEOGAMES: '/vg',
+  VIDEOGAMES: '/',
 };
 
 export const MENU_LINKS: MenuLink[] = [
