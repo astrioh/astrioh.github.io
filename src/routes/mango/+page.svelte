@@ -1,1 +1,0 @@
-<div>Mango page</div>

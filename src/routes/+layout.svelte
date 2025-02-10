@@ -10,7 +10,11 @@
     <div class="container">
       <NavMenu className="page-nav" />
       <main>
-        {@render children()}
+        <div class="content-outer-wrapper">
+          <div class="content-inner-wrapper">
+            {@render children()}
+          </div>
+        </div>
       </main>
     </div>
   </div>
@@ -23,9 +27,10 @@
   }
   .container {
     display: flex;
-    padding: 50px;
+    padding: 50px 0;
     margin: 0 auto;
-    width: 1440px;
+    width: 1660px;
+    height: 100%;
   }
 
   :global(.page-nav) {
@@ -33,8 +38,8 @@
   }
 
   main {
-    padding: 100px 70px;
     width: 100%;
+    padding: 30px;
   }
   .page-wrapper::before {
     content: '';
@@ -46,9 +51,42 @@
     z-index: -1;
   }
 
+  .content-outer-wrapper {
+    position: relative;
+    border: 8px solid var(--border-color-black);
+    padding: 3px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-outer-wrapper::before {
+    content: '';
+    position: absolute;
+    background-color: var(--bg-color-white);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .content-inner-wrapper {
+    border: 2px solid var(--border-color-black);
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
   .mango .page-wrapper::before {
     background: url('$lib/assets/shrine.png') repeat;
     background-size: 30px;
     opacity: 0.5;
+  }
+
+  @media (max-width: 1660px) {
+    .container {
+      width: 1440px;
+    }
   }
 </style>

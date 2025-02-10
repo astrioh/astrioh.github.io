@@ -8,7 +8,7 @@ export const PAGE_PATHS = {
   MAIN: '/',
   PROJECTS: '/',
   PROJECTS_PROGRAMS: '/',
-  MANGA: '/mango',
+  READING_DIARY: '/review',
   VIDEOGAMES: '/',
 };
 
@@ -28,11 +28,7 @@ export const MENU_LINKS: MenuLink[] = [
     ],
   },
   {
-    text: 'Манга',
-    href: PAGE_PATHS.MANGA,
-  },
-  {
-    text: 'Видеоигры',
-    href: PAGE_PATHS.VIDEOGAMES,
+    text: '"Дневник читателя"',
+    href: PAGE_PATHS.READING_DIARY,
   },
 ];

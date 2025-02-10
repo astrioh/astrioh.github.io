@@ -6,10 +6,13 @@
 }
 
 :root {
-  --color-black: #000;
-  --color-dark-blue: #010058;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-blue: #090799;
+  --bg-color-white: var(--color-white);
   --text-color-black: var(--color-black);
   --text-color-blue: var(--color-dark-blue);
+  --border-color-black: var(--color-black);
 }
 
 @media print {

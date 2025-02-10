@@ -26,10 +26,13 @@
 
 <style>
   .nav-menu {
-    background-image: url('$lib/assets/mango-menu.png');
     padding: 80px 128px 120px 90px;
     width: 491px;
     height: 647px;
+  }
+
+  :global(.mango) .nav-menu {
+    background-image: url('$lib/assets/mango-menu.png');
   }
 
   .menu-list {
