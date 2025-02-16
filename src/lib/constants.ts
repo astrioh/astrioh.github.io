@@ -10,6 +10,8 @@ export const PAGE_PATHS = {
   PROJECTS_PROGRAMS: '/',
   READING_DIARY: '/review',
   VIDEOGAMES: '/',
+  GALLERY: '/',
+  ART_GALLERY: '/gallery/art'
 };
 
 export const MENU_LINKS: MenuLink[] = [
@@ -30,5 +32,15 @@ export const MENU_LINKS: MenuLink[] = [
   {
     text: '"Дневник читателя"',
     href: PAGE_PATHS.READING_DIARY,
+  },
+  {
+    text: 'Галерея',
+    href: PAGE_PATHS.GALLERY,
+    children: [
+      {
+        text: 'Картины',
+        href: PAGE_PATHS.ART_GALLERY,
+      },
+    ],
   },
 ];

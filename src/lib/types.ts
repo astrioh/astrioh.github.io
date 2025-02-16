@@ -15,4 +15,5 @@ export type Post = {
 export enum Themes {
   Mango = 'mango',
   Techno = 'techno',
+  Art = 'art',
 }
